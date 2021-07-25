@@ -131,9 +131,6 @@ input {
   margin-bottom: 10px;
   grid-template-columns: repeat(4, 1fr);
 
-  @media screen and (max-width: 1400px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
   @media screen and (max-width: 780px) {
     grid-template-columns: repeat(2, 1fr);
   }

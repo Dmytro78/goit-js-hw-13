@@ -62,7 +62,9 @@ var e=require("process"),t=require("./utils"),r=require("./helpers/normalizeHead
 "use strict";var e=require("./utils"),r=require("./helpers/bind"),i=require("./core/Axios"),n=require("./core/mergeConfig"),u=require("./defaults");function o(n){var u=new i(n),o=r(i.prototype.request,u);return e.extend(o,i.prototype,u),e.extend(o,u),o}var l=o(u);l.Axios=i,l.create=function(e){return o(n(l.defaults,e))},l.Cancel=require("./cancel/Cancel"),l.CancelToken=require("./cancel/CancelToken"),l.isCancel=require("./cancel/isCancel"),l.all=function(e){return Promise.all(e)},l.spread=require("./helpers/spread"),l.isAxiosError=require("./helpers/isAxiosError"),module.exports=l,module.exports.default=l;
 },{"./utils":"S1cf","./helpers/bind":"EDTP","./core/Axios":"OvAf","./core/mergeConfig":"OHvn","./defaults":"BXyq","./cancel/Cancel":"mIKj","./cancel/CancelToken":"tsWd","./cancel/isCancel":"V30M","./helpers/spread":"X8jb","./helpers/isAxiosError":"wICU"}],"dZBD":[function(require,module,exports) {
 module.exports=require("./lib/axios");
-},{"./lib/axios":"nUiQ"}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss");var e=i(require("./js/refs.js")),r=i(require("notiflix")),s=i(require("axios"));function i(e){return e&&e.__esModule?e:{default:e}}
-},{"./sass/main.scss":"clu1","./js/refs.js":"clu1","notiflix":"xeAG","axios":"dZBD"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-13/src.c2e1649b.js.map
+},{"./lib/axios":"nUiQ"}],"xKyL":[function(require,module,exports) {
+var o="YOUR_API_KEY",e="https://pixabay.com/api/?key="+o+"&q="+encodeURIComponent("red roses");$.getJSON(e,function(o){parseInt(o.totalHits)>0?$.each(o.hits,function(o,e){console.log(e.pageURL)}):console.log("No hits")});
+},{}],"Focm":[function(require,module,exports) {
+"use strict";require("./sass/main.scss");var e=u(require("./js/refs.js")),r=u(require("notiflix")),s=u(require("axios")),i=u(require("./js/api-key.js"));function u(e){return e&&e.__esModule?e:{default:e}}
+},{"./sass/main.scss":"clu1","./js/refs.js":"clu1","notiflix":"xeAG","axios":"dZBD","./js/api-key.js":"xKyL"}]},{},["Focm"], null)
+//# sourceMappingURL=/goit-js-hw-13/src.f4e91e8c.js.map
